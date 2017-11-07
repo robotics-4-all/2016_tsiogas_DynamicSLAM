@@ -1,0 +1,28 @@
+<package>
+	<name>crsm_dynamic_slam</name>
+	<version>1.0.3</version>
+	<description>ROS package for the CRSM Dynamic SLAM (Critical Rays Scan Match Dynamic Simultaneous Localization And Mapping)</description>
+	<maintainer email="etsardou@gmail.com">Manos Tsardoulias</maintainer>
+	<maintainer email="efthimis91@gmail.com">Efthimis Tsiogas</maintainer>
+	
+	<license>GPLv3.0</license>
+	
+	<author>Manos Tsardoulias</author>
+	<buildtool_depend>catkin</buildtool_depend>
+	
+	<build_depend>roscpp</build_depend> 
+	<build_depend>tf</build_depend> 
+	<build_depend>nav_msgs</build_depend> 
+	<build_depend>geometry_msgs</build_depend> 
+	<build_depend>visualization_msgs</build_depend> 
+	<build_depend>sensor_msgs</build_depend> 
+	<build_depend>std_msgs</build_depend> 
+	
+	<run_depend>roscpp</run_depend> 
+	<run_depend>tf</run_depend> 
+	<run_depend>nav_msgs</run_depend> 
+	<run_depend>geometry_msgs</run_depend> 
+	<run_depend>visualization_msgs</run_depend> 
+	<run_depend>sensor_msgs</run_depend> 
+	<run_depend>std_msgs</run_depend> 
+</package>
