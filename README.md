@@ -2,7 +2,7 @@
 
 Intro:
 
-This repository contains the files for a modified version of the ROS-package CRSM SLAM (Original description link: http://wiki.ros.org/crsm_slam). The changes that appear in this version make up the work product of the diploma thesis (SLAM in dynamic environments and tracking of moving objects) of Efthimis Tsiogas at School of Electrical and Computer Engineering, part of the Faculty Of Engineering of Aristotle University Of Thessaloniki, Greece.
+This repository contains the files for a modified version of the original CRSM SLAM program (Description link: http://wiki.ros.org/crsm_slam) named CRSM Dynamic SLAM. The changes that appear in this version make up the work product of the diploma thesis (SLAM in dynamic environments and tracking of moving objects) of Efthimis Tsiogas at School of Electrical and Computer Engineering, part of the Faculty Of Engineering of Aristotle University Of Thessaloniki, Greece.
 
 Software requirements:
 
