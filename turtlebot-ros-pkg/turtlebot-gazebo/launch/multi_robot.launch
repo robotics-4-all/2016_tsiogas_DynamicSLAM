@@ -1,0 +1,36 @@
+<!-- Create this file! -->
+
+<launch>
+	<arg name="base"/>
+  <arg name="stacks"/>
+  <arg name="3d_sensor"/>
+	
+	<!-- Slam robot -->
+	
+	<param name="robot_description" command="$(find xacro)/xacro.py '$(find turtlebot_description)/robots/$(arg base)_$(arg stacks)_$(arg 3d_sensor)_slam.urdf.xacro'"/>
+  <param name="tf_prefix" value="slamRobot_tf"/>
+	
+	<node name="spawn_turtlebot_model" pkg="gazebo_ros" type="spawn_model" args="-x -2 -y -4 -z 0 -Y 0 -unpause -urdf -param /robot_description /tf_prefix -model SlamRobot" ns="slamRobot"/>
+	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" ns="slamRobot"/>
+  
+	<!-- Extra robots -->
+	
+  <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find turtlebot_description)/robots/$(arg base)_$(arg stacks)_$(arg 3d_sensor).urdf.xacro'"/>
+	<param name="extra_robot_description" command="$(arg urdf_file)"/>
+  
+  <group ns="robot1">
+    <param name="tf_prefix" value="robot1_tf"/>
+    <include file="$(find turtlebot_gazebo)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x 3 -y -3 -z 0 -Y 0"/>
+      <arg name="robot_name"  value="Robot1"/>
+    </include>
+  </group>
+  
+  <group ns="robot2">
+		<param name="tf_prefix" value="robot2_tf"/>
+    <include file="$(find turtlebot_gazebo)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x 4 -y 2 -z 0 -Y 0"/>
+      <arg name="robot_name"  value="Robot2"/>
+    </include>
+  </group>
+</launch>
