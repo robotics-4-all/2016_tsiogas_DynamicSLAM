@@ -1,6 +1,6 @@
 # 2016_tsiogas_DynamicSLAM
 
-CRSM Dynamic SLAM is an extended version of the original CRSM SLAM program (http://wiki.ros.org/crsm_slam). The additions/changes that appear in this version make up the work product of the diploma thesis "SLAM in dynamic environments and tracking of moving objects" of Efthimis Tsiogas (efthimis91@gmail.com), graduate of School of Electrical and Computer Engineering, part of the Faculty Of Engineering of Aristotle University Of Thessaloniki, Greece.
+CRSM Dynamic SLAM is an extended version of the original CRSM SLAM ROS package (http://wiki.ros.org/crsm_slam). Changes/additions of this version constitute the work product of diploma thesis "SLAM in dynamic environments and tracking of moving objects", carried out by Efthimis Tsiogas (efthimis.tsiogas@gmail.com), graduate of School of Electrical and Computer Engineering, part of the Faculty Of Engineering of Aristotle University Of Thessaloniki, Greece in 2017.
 
 # Installation instructions:
 
